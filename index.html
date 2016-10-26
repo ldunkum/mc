@@ -6,20 +6,28 @@
     <title>Deforestation and it's results</title>
 </head>
 
-<body>
-
-    <div id="map" style="position: relative; width: 500px; height: 300px;">
+<!-- <body>
+    <div id="myCanvas" style="position: relative; width: 500px; height: 300px;">
 
     </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-    <script src="js/datamaps.world.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
     <script type="text/javascript">
-        var basic = new Datamap({
-            element: document.getElementById('map')
-        });
-    </script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+        ctx.stroke();
+    </script> -->
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="js/datamaps.world.hires.min.js"></script>
+<script src="/js/datamaps.world.min.js"></script>
+<div id="container" style="position: relative; width: 500px; height: 300px;"></div>
+<script>
+    var map = new Datamap({
+        element: document.getElementById('container')
+    });
+</script>
 </body>
 
 </html>
