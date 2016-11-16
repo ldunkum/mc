@@ -45,10 +45,9 @@ body, html {
 }
 
 .caption span.border {
-  background-color: #111;
   color: #fff;
   padding: 18px;
-  font-size: 25px;
+  font-size: 5vw;
   letter-spacing: 10px;
 }
 
