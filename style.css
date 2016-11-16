@@ -15,23 +15,23 @@ body, html {
 
 }
 .bgimg-1 {
-  background-color:#a8d3e0;
+  background-image: url("forestry.jpg");
   min-height: 100%;
 }
 
 .bgimg-2 {
-  background-color:#6394a3;
+  background-color:#a8d3e0;
   min-height: 100%;
 }
 
 
 .bgimg-3 {
-  background-color:#374b51;
+  background-color:#6394a3;
   min-height: 100%;
 }
 
 .bgimg-4 {
-  background-color:#6d7172;
+  background-color:#374b51;
   min-height: 100%;
 }
 
