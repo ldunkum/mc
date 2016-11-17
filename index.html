@@ -27,8 +27,8 @@
 		window.onload = function () {
 			var chart = new CanvasJS.Chart("chartContainer", {
 				title: {
-					text: "DEFORESTATION",
-					fontSize: 30,
+					text: "Evolution of forest desforestation in several countries",
+					fontSize: 20,
                     fontFamily:"Roboto Mono"
                     
 				},
@@ -71,6 +71,7 @@
 					type: "line",
 					showInLegend: true,
 					name: "South Africa",
+                    markerType: "cross",
 					color: "#20B2AA",
 					lineThickness: 2,
 
@@ -119,7 +120,7 @@
       </script>
 
 
-      <div id="chartContainer" style="height: 50%; width: 50%; margin-left:25%; margin-top: -16%;">
+      <div id="chartContainer" style="height: 60%; width: 70%; margin-left:15%; margin-top: -16%;">
 	</div>
 
     </div>
