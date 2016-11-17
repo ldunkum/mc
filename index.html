@@ -2,6 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css" media="all">
+      <script src="canvasjs.min.js"></script>
+	<title>CanvasJS Example</title>
 </head>
 <body>
 
@@ -19,14 +21,112 @@
       </div>
     </div>
   </div>
-</div>
 
 <div class="bgimg-3">
   <div class="caption">
 
+      <script type="text/javascript">
+		window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer", {
+				title: {
+					text: "Evolution of forest desforestation in several countries",
+					fontSize: 20,
+                    fontFamily:"Roboto Mono"
+                    
+				},
+				animationEnabled: true,
+				axisX: {
+                    
+					gridColor: "Silver",
+					tickColor: "silver"
+					/*valueFormatString: "YYY"*/
+                    
+				},
+				toolTip: {
+					shared: true
+				},
+				theme: "theme2",
+				axisY: {
+					gridColor: "Silver",
+					tickColor: "silver"
+				},
+				legend: {
+					verticalAlign: "center",
+					horizontalAlign: "right"
+				},
+				data: [
+				{
+					type: "line",
+					showInLegend: true,
+					lineThickness: 2,
+					name: "Russia",
+					markerType: "square",
+					color: "#F08080",
+					dataPoints: [
+					{ x: 2010, y: 4881009 },
+					{ x: 2011, y: 10272218 },
+					{ x: 2012, y: 15237746 },
+					{ x: 2013, y: 18539831 }
+					]
+				},
+				{
+					type: "line",
+					showInLegend: true,
+					name: "South Africa",
+                    markerType: "cross",
+					color: "#20B2AA",
+					lineThickness: 2,
+
+					dataPoints: [
+					{ x: 2010, y: 131479 },
+					{ x: 2011, y: 216394 },
+					{ x: 2012, y: 272796 },
+					{ x: 2013, y: 331699 }
+					]
+				},
+                    
+                    {
+					type: "line",
+					showInLegend: true,
+					name: "Brazil",
+					color: "red",
+					lineThickness: 2,
+
+					dataPoints: [
+					{ x: 2010, y: 4612258 },
+					{ x: 2011, y: 7530890 },
+					{ x: 2012, y: 9476395 },
+					{ x: 2013, y: 11738637 }
+					]
+				}
+                    
+                    
+                    
+				],
+				legend: {
+					cursor: "pointer",
+					itemclick: function (e) {
+						if (typeof (e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+							e.dataSeries.visible = false;
+						}
+						else {
+							e.dataSeries.visible = true;
+						}
+						chart.render();
+					}
+				}
+			});
+
+			chart.render();
+		}
+      </script>
+
+
+      <div id="chartContainer" style="height: 60%; width: 70%; margin-left:15%; margin-top: -16%;">
+	</div>
+
     </div>
   </div>
-</div>
 
 <div class="bgimg-4">
   <div class="caption">
