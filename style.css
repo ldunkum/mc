@@ -35,6 +35,18 @@ body, html {
   min-height: 100%;
 }
 
+.brazilGif img {
+  width: 500px;
+  height: 375px;
+}
+
+.brazilGifContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
 .caption {
   position: absolute;
   left: 0;
