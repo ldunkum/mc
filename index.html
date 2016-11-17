@@ -27,14 +27,18 @@
 		window.onload = function () {
 			var chart = new CanvasJS.Chart("chartContainer", {
 				title: {
-					text: "Site Traffic",
-					fontSize: 30
+					text: "DEFORESTATION",
+					fontSize: 30,
+                    fontFamily:"Roboto Mono"
+                    
 				},
 				animationEnabled: true,
 				axisX: {
+                    
 					gridColor: "Silver",
-					tickColor: "silver",
-					valueFormatString: "DD/MMM"
+					tickColor: "silver"
+					/*valueFormatString: "YYY"*/
+                    
 				},
 				toolTip: {
 					shared: true
@@ -53,44 +57,48 @@
 					type: "line",
 					showInLegend: true,
 					lineThickness: 2,
-					name: "Visits",
+					name: "Russia",
 					markerType: "square",
 					color: "#F08080",
 					dataPoints: [
-					{ x: new Date(2010, 0, 3), y: 650 },
-					{ x: new Date(2010, 0, 5), y: 700 },
-					{ x: new Date(2010, 0, 7), y: 710 },
-					{ x: new Date(2010, 0, 9), y: 658 },
-					{ x: new Date(2010, 0, 11), y: 734 },
-					{ x: new Date(2010, 0, 13), y: 963 },
-					{ x: new Date(2010, 0, 15), y: 847 },
-					{ x: new Date(2010, 0, 17), y: 853 },
-					{ x: new Date(2010, 0, 19), y: 869 },
-					{ x: new Date(2010, 0, 21), y: 943 },
-					{ x: new Date(2010, 0, 23), y: 970 }
+					{ x: 2010, y: 4881009 },
+					{ x: 2011, y: 10272218 },
+					{ x: 2012, y: 15237746 },
+					{ x: 2013, y: 18539831 }
 					]
 				},
 				{
 					type: "line",
 					showInLegend: true,
-					name: "Unique Visits",
+					name: "South Africa",
 					color: "#20B2AA",
 					lineThickness: 2,
 
 					dataPoints: [
-					{ x: new Date(2010, 0, 3), y: 510 },
-					{ x: new Date(2010, 0, 5), y: 560 },
-					{ x: new Date(2010, 0, 7), y: 540 },
-					{ x: new Date(2010, 0, 9), y: 558 },
-					{ x: new Date(2010, 0, 11), y: 544 },
-					{ x: new Date(2010, 0, 13), y: 693 },
-					{ x: new Date(2010, 0, 15), y: 657 },
-					{ x: new Date(2010, 0, 17), y: 663 },
-					{ x: new Date(2010, 0, 19), y: 639 },
-					{ x: new Date(2010, 0, 21), y: 673 },
-					{ x: new Date(2010, 0, 23), y: 660 }
+					{ x: 2010, y: 131479 },
+					{ x: 2011, y: 216394 },
+					{ x: 2012, y: 272796 },
+					{ x: 2013, y: 331699 }
+					]
+				},
+                    
+                    {
+					type: "line",
+					showInLegend: true,
+					name: "Brazil",
+					color: "red",
+					lineThickness: 2,
+
+					dataPoints: [
+					{ x: 2010, y: 4612258 },
+					{ x: 2011, y: 7530890 },
+					{ x: 2012, y: 9476395 },
+					{ x: 2013, y: 11738637 }
 					]
 				}
+                    
+                    
+                    
 				],
 				legend: {
 					cursor: "pointer",
@@ -111,7 +119,7 @@
       </script>
 
 
-      <div id="chartContainer" style="height: 400px; width: 100%;">
+      <div id="chartContainer" style="height: 50%; width: 50%; margin-left:25%; margin-top: -16%;">
 	</div>
 
     </div>
