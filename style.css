@@ -87,6 +87,7 @@ p{
     height: 20%;
     position: absolute;
     top: 5%;
+    margin-top: 2%;
 }
 
 #first {
@@ -119,8 +120,9 @@ p{
     position: absolute;
     top: 30px;
     display: none;
+    height: 100%;
 }
 .two p{
-    color:black
+    color:black;
     height: 100%;
 }
