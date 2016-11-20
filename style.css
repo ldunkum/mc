@@ -98,3 +98,6 @@ h3 {
     -o-transition: top 1s;
     transition: top 1s;
 }
+/*.one:hover + .two {
+    top: 0px;
+}*/
