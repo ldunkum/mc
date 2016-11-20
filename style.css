@@ -79,30 +79,5 @@ h3 {
 p{
   text-align: left;
 }
-.moving {
-	position:relative;
-	
-	width: 50px;
-	height: 50px;
-	background-color:#ff0000;
-
-	animation-name: move-left-right;
-    animation-duration: 1s;
-	animation-delay: 0s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
 
 
-
-
-
-
-
-
-
-@keyframes move-left-right {
-	0%  { left: 0px; }
-    100% { left: 400px; }
-}
