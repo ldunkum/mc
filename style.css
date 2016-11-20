@@ -81,3 +81,29 @@ p{
 }
 
 
+
+.container {
+    overflow:hidden;
+    width: 20%;
+    margin-top:-15%;
+    margin-left:5%;
+}
+.container2 {
+    overflow:hidden;
+    width: 20%;
+    margin-top:-15%;
+    margin-left:5%;
+}
+
+.one {
+    position: relative;
+    top: 0;
+    background-color: lightblue;
+    z-index: 1;
+    cursor:pointer;
+}
+
+.two {
+    display: none;
+}
+
