@@ -79,7 +79,6 @@ h3 {
 p{
   text-align: left;
 }
-
 .moving {
 	position:relative;
 	
@@ -93,4 +92,17 @@ p{
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+}
+
+
+
+
+
+
+
+
+
+@keyframes move-left-right {
+	0%  { left: 0px; }
+    100% { left: 400px; }
 }
