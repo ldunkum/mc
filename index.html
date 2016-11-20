@@ -61,7 +61,7 @@
 					lineThickness: 2,
 					name: "Russia",
 					markerType: "square",
-					color: "#F08080",
+					color: "red",
 					dataPoints: [
 					{ x: 2010, y: 4881009 },
 					{ x: 2011, y: 10272218 },
@@ -69,27 +69,13 @@
 					{ x: 2013, y: 18539831 }
 					]
 				},
-				{
-					type: "line",
-					showInLegend: true,
-					name: "South Africa",
-                    markerType: "cross",
-					color: "#20B2AA",
-					lineThickness: 2,
-
-					dataPoints: [
-					{ x: 2010, y: 131479 },
-					{ x: 2011, y: 216394 },
-					{ x: 2012, y: 272796 },
-					{ x: 2013, y: 331699 }
-					]
-				},
+				
 
                     {
 					type: "line",
 					showInLegend: true,
 					name: "Brazil",
-					color: "red",
+					color: "yellow",
 					lineThickness: 2,
 
 					dataPoints: [
@@ -99,13 +85,30 @@
 					{ x: 2013, y: 11738637 }
 					]
 				},
+                    
+                    {
+					type: "line",
+					showInLegend: true,
+					name: "Portugal",
+                    markerType: "cross",
+					color: "green",
+					lineThickness: 2,
+
+					dataPoints: [
+					{ x: 2010, y: 75074 },
+					{ x: 2011, y: 133310 },
+					{ x: 2012, y: 185195 },
+					{ x: 2013, y: 233909 }
+					]
+				},
+                    
 
                  {
 					type: "line",
 					showInLegend: true,
 					name: "Indonesia",
                      markerType: "triangle",
-					color: "red",
+					color: "blue",
 					lineThickness: 2,
 
 					dataPoints: [
@@ -138,6 +141,11 @@
 
       <div id="chartContainer" style="height: 60%; width: 70%; margin-left:15%; margin-top: -16%;">
 	</div>
+      
+      
+      
+      
+      
 
     </div>
   </div>
@@ -145,44 +153,7 @@
     
 <div class="bgimg-4">
   <div class="caption">
-      
-  <script type="text/javascript">
-window.onload = function () {
-	var chart = new CanvasJS.Chart("chartContainer2",
-	{
-		title:{
-			text: "causes of deforestation"
-		},
-                animationEnabled: true,
-		legend:{
-			verticalAlign: "center",
-			horizontalAlign: "left",
-			fontSize: 20,
-			fontFamily: "Roboto Mono"        
-		},
-		theme: "theme2",
-		data: [
-		{        
-			type: "pie",       
-			indexLabelFontFamily: "Roboto Mono",       
-			indexLabelFontSize: 20,
-			indexLabel: "{label} {y}%",
-			startAngle:-20,      
-			showInLegend: false,
-			toolTipContent:"{legendText} {y}%",
-			dataPoints: [
-				{  y: 48.00, legendText:"curiosidade1", label: "Subsistence farming" },
-				{  y: 32.00, legendText:"commercial agriculture", label: "commercial agriculture" },
-				{  y: 14.00, legendText:"logging", label: "logging" },
-				{  y: 5.00, legendText:"fuel wood removals" , label: "fuel wood removals"}
-			]
-		}
-		]
-	});
-	chart.render();
-}
-</script>
-      <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+ 
 
       
       
