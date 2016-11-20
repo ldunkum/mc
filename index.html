@@ -142,8 +142,50 @@
     </div>
   </div>
 
+    
 <div class="bgimg-4">
   <div class="caption">
+      
+  <script type="text/javascript">
+window.onload = function () {
+	var chart = new CanvasJS.Chart("chartContainer2",
+	{
+		title:{
+			text: "causes of deforestation"
+		},
+                animationEnabled: true,
+		legend:{
+			verticalAlign: "center",
+			horizontalAlign: "left",
+			fontSize: 20,
+			fontFamily: "Roboto Mono"        
+		},
+		theme: "theme2",
+		data: [
+		{        
+			type: "pie",       
+			indexLabelFontFamily: "Roboto Mono",       
+			indexLabelFontSize: 20,
+			indexLabel: "{label} {y}%",
+			startAngle:-20,      
+			showInLegend: false,
+			toolTipContent:"{legendText} {y}%",
+			dataPoints: [
+				{  y: 48.00, legendText:"curiosidade1", label: "Subsistence farming" },
+				{  y: 32.00, legendText:"commercial agriculture", label: "commercial agriculture" },
+				{  y: 14.00, legendText:"logging", label: "logging" },
+				{  y: 5.00, legendText:"fuel wood removals" , label: "fuel wood removals"}
+			]
+		}
+		]
+	});
+	chart.render();
+}
+</script>
+      <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+
+      
+      
   </div>
 </div>
 
