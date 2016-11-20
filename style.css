@@ -40,6 +40,12 @@ body, html {
   height: 375px;
 }
 
+.russiaGif {
+  width: 60%;
+  height: 90%;
+  background-image: url("russiaDeforestation.gif");
+}
+
 .brazilGifContainer {
   display: flex;
   flex-direction: row;
@@ -79,5 +85,3 @@ h3 {
 p{
   text-align: left;
 }
-
-
