@@ -2,257 +2,227 @@
 <html>
 
 <head>
-
-	<link rel="stylesheet" href="style.css" media="all">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<script src="canvasjs.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-	<title>Deforestation around the World</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <script src="canvasjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>CanvasJS Example</title>
+    <link rel="stylesheet" href="style.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <script src="canvasjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>CanvasJS Example</title>
 </head>
 
 <body>
+    <div class="bgimg-1">
+        <div class="caption">
+            <span class="border">DEFORESTATION</span>
+        </div>
+    </div>
+    <div class="bgimg-2">
+        <p style="opacity:100%;">Progress of deforestation from 2001-2014 in four countries</p>
+        <div class="caption gifContainer ussiaGifContainer">
+            <div class="russiaGif">
+                <img class="gifs" src="russiaDeforestation.gif"  style="width: 60%; height: 90%;" >
+                <p>Russia</p>
+            </div>
+        </div>
+        <div class="caption gifContainer brazilGifContainer">
+            <div class="brazilGif">
+                <img class="gifs" src="finalGif2.gif" style="width: 60%; height: 90%;" />
+                <p>Brazil</p>
+            </div>
+        </div>
+        <div class="caption gifContainer portugalGifContainer">
+            <div class="portugalGif">
+                <img class="gifs" src="portRect.gif" style="width: 60%; height: 90%;">
+                <p>Portugal</p>
+            </div>
+        </div>
+        <div class="caption gifContainer indonesiaGifContainer">
+            <div class="indonesiaGif">
+                <img class="gifs" src="indonesiaRect.gif" style="width: 60%; height: 90%;">
+                <p>Indonesia</p>
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-3">
+        <div class="caption">
+            <script type="text/javascript">
+                window.onload = function() {
+                    var chart = new CanvasJS.Chart("chartContainer", {
+                        title: {
+                            text: "Evolution of forest desforestation in several countries",
+                            fontSize: 20,
+                            fontFamily: "Roboto Mono"
+                        },
+                        animationEnabled: true,
+                        axisX: {
+                            gridColor: "Silver",
+                            tickColor: "silver"
+                        },
+                        toolTip: {
+                            shared: true
+                        },
+                        theme: "theme2",
+                        axisY: {
+                            gridColor: "Silver",
+                            tickColor: "silver"
+                        },
+                        legend: {
+                            verticalAlign: "center",
+                            horizontalAlign: "right"
+                        },
+                        data: [{
+                            type: "line",
+                            showInLegend: true,
+                            lineThickness: 2,
+                            name: "Russia",
+                            markerType: "square",
+                            color: "red",
+                            dataPoints: [{
+                                x: 2009,
+                                y: 3971192
+                            }, {
+                                x: 2010,
+                                y: 6992635
+                            }, {
+                                x: 2011,
+                                y: 12383844
+                            }, {
+                                x: 2012,
+                                y: 17349372
+                            }, {
+                                x: 2013,
+                                y: 20651457
+                            }]
+                        }, {
+                            type: "line",
+                            showInLegend: true,
+                            name: "Brazil",
+                            color: "purple",
+                            lineThickness: 2,
+                            dataPoints: [{
+                                x: 2009,
+                                y: 4506796
+                            }, {
+                                x: 2010,
+                                y: 6430158
+                            }, {
+                                x: 2011,
+                                y: 9348790
+                            }, {
+                                x: 2012,
+                                y: 11294296
+                            }, {
+                                x: 2013,
+                                y: 13556537
+                            }]
+                        }, {
+                            type: "line",
+                            showInLegend: true,
+                            name: "Portugal",
+                            markerType: "cross",
+                            color: "green",
+                            lineThickness: 2,
+                            dataPoints: [{
+                                x: 2009,
+                                y: 88261
+                            }, {
+                                x: 2010,
+                                y: 114934
+                            }, {
+                                x: 2011,
+                                y: 173170
+                            }, {
+                                x: 2012,
+                                y: 225054
+                            }, {
+                                x: 2013,
+                                y: 273769
+                            }]
+                        }, {
+                            type: "line",
+                            showInLegend: true,
+                            name: "Indonesia",
+                            text: "year",
+                            markerType: "triangle",
+                            color: "blue",
+                            lineThickness: 2,
+                            dataPoints: [{
+                                x: 2009,
+                                y: 3227238
+                            }, {
+                                x: 2010,
+                                y: 4772010
+                            }, {
+                                x: 2011,
+                                y: 7034199
+                            }, {
+                                x: 2012,
+                                y: 8174225
+                            }, {
+                                x: 2013,
+                                y: 9664683
+                            }]
+                        }],
+                        legend: {
+                            cursor: "pointer",
+                            itemclick: function(e) {
+                                if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
+                                    e.dataSeries.visible = false;
+                                } else {
+                                    e.dataSeries.visible = true;
+                                }
+                                chart.render();
+                            }
+                        }
+                    });
+                    chart.render();
+                }
+            </script>
+            <div id="chartContainer" style="height: 60%; width: 70%; margin-left:15%; margin-top: 15%;">
+            </div>
+        </div>
+    </div>
+    <div class="bgimg-4">
+        <div class="caption">
+            <div class="container" id="first">
+                <div class="one">South Africa </div>
+                <div class="two">
+                    <p>The forest is not very dense and the main cause of forest destruction is fires. They can arise through human intervention. Without intention or fire. They may also arise due to weather conditions such as high temperatures or thunderstorms.
+                        Portugal is heavily affected by fires, mainly in summer</p>
+                </div>
+            </div>
 
-	<div class="bgimg-1">
-		<div class="caption">
-			<span class="border">DEFORESTATION</span>
-		</div>
-	</div>
-
-
-	<div class="bgimg-2">
-		<p style="opacity:100%;">Progress of deforestation from 2001-2014 in four countries</p>
-		<div class="caption russiaGifContainer gifContainer">
-			<div class="russiaGif">
-				<img class="gifs" src="russiaDeforestation.gif"/>
-				<p>Russia</p>
-			</div>
-		</div>
-		<div class="caption brazilGifContainer gifContainer">
-			<div class="brazilGif">
-				<img class="gifs" src="finalGif2.gif" />
-				<p>Brazil</p>
-			</div>
-		</div>
-		<div class="caption portugalGifContainer gifContainer">
-			<div class="portugalGif">
-				<img class="gifs" src="portRect.gif"/>
-				<p>Portugal</p>
-			</div>
-		</div>
-		<div class="caption indonesiaGifContainer gifContainer">
-			<div class="indonesiaGif">
-				<img class="gifs" src="indonesiaRect.gif"/>
-				<p>Indonesia</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="bgimg-3">
-		<div class="caption">
-
-
-			<script type="text/javascript">
-				window.onload = function() {
-					var chart = new CanvasJS.Chart("chartContainer", {
-						title: {
-							text: "Evolution of forest desforestation in several countries",
-							fontSize: 20,
-							fontFamily: "Roboto Mono"
-
-						},
-						animationEnabled: true,
-						axisX: {
-
-							gridColor: "Silver",
-							tickColor: "silver"
-
-
-						},
-						toolTip: {
-							shared: true
-						},
-						theme: "theme2",
-						axisY: {
-							gridColor: "Silver",
-							tickColor: "silver"
-						},
-						legend: {
-							verticalAlign: "center",
-							horizontalAlign: "right"
-						},
-						data: [{
-								type: "line",
-								showInLegend: true,
-								lineThickness: 2,
-								name: "Russia",
-								markerType: "square",
-								color: "red",
-								dataPoints: [{
-									x: 2009,
-									y: 3971192
-								}, {
-									x: 2010,
-									y: 6992635
-								}, {
-									x: 2011,
-									y: 12383844
-								}, {
-									x: 2012,
-									y: 17349372
-								}, {
-									x: 2013,
-									y: 20651457
-								}]
-							},
-
-
-							{
-								type: "line",
-								showInLegend: true,
-								name: "Brazil",
-								color: "purple",
-								lineThickness: 2,
-
-								dataPoints: [{
-										x: 2009,
-										y: 4506796
-									}, {
-										x: 2010,
-										y: 6430158
-									}, {
-										x: 2011,
-										y: 9348790
-									}, {
-										x: 2012,
-										y: 11294296
-									}, {
-										x: 2013,
-										y: 13556537
-									}
-
-								]
-							},
-
-							{
-								type: "line",
-								showInLegend: true,
-								name: "Portugal",
-								markerType: "cross",
-								color: "green",
-								lineThickness: 2,
-
-								dataPoints: [{
-									x: 2009,
-									y: 88261
-								}, {
-									x: 2010,
-									y: 114934
-								}, {
-									x: 2011,
-									y: 173170
-								}, {
-									x: 2012,
-									y: 225054
-								}, {
-									x: 2013,
-									y: 273769
-								}]
-							},
-
-
-							{
-								type: "line",
-								showInLegend: true,
-								name: "Indonesia",
-								text: "year",
-								markerType: "triangle",
-								color: "blue",
-								lineThickness: 2,
-
-								dataPoints: [{
-									x: 2009,
-									y: 3227238
-								}, {
-									x: 2010,
-									y: 4772010
-								}, {
-									x: 2011,
-									y: 7034199
-								}, {
-									x: 2012,
-									y: 8174225
-								}, {
-									x: 2013,
-									y: 9664683
-								}]
-							}
-
-						],
-						legend: {
-							cursor: "pointer",
-							itemclick: function(e) {
-								if (typeof(e.dataSeries.visible) === "undefined" || e.dataSeries.visible) {
-									e.dataSeries.visible = false;
-								} else {
-									e.dataSeries.visible = true;
-								}
-								chart.render();
-							}
-						}
-						});
-
-					chart.render();
-				}
-			</script>
-
-
-			<div id="chartContainer" style="height: 60%; width: 70%; margin-left:15%; margin-top: -16%;">
-			</div>
-		</div>
-	</div>
-
-
-	<div class="bgimg-4">
-		<div class="caption">
-
-			<div class="container">
-				<div class="one">Portugal</div>
-
-
-				<div class="two">
-					<p>i slide and that's so cool!!</p>
-				</div>
-				<script>
-					$(document).ready(
-						function() {
-							$(".one").click(function() {
-								$(".two").toggle();
-
-							});
-						});
-				</script>
-			</div>
-
-			<div class="containerr">
-				<div class="three">Portugal</div>
-
-				<div class="four">
-					<p>i slide and that's so cool!!</p>
-				</div>
-				<script>
-					$(document).ready(
-						function() {
-							$(".three").click(function() {
-								$(".four").toggle();
-							});
-						});
-				</script>
-			</div>
-
-		</div>
-	</div>
-
+            <div class="container" id="second">
+                <div class="one">South Africa </div>
+                <div class="two">
+                    <p>i slide and that's so cool!!</p>
+                </div>
+            </div>
+            <div class="container" id="third">
+                <div class="one">South Africa </div>
+                <div class="two">
+                    <p>i slide and that's so cool!!</p>
+                </div>
+            </div>
+            <div class="container" id="fourth">
+                <div class="one">South Africa </div>
+                <div class="two">
+                    <p>i slide and that's so cool!!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(
+            function() {
+                $(".one").click(function() {
+                    $(".two", $(this).parent()).toggle();
+                });
+            });
+    </script>
 </body>
 
 </html>
