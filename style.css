@@ -35,22 +35,29 @@ body, html {
   min-height: 100%;
 }
 
+.gifContainer *{
+  display: block;
+}
+
+.gifs {
+  width: 30%;
+}
+
 .brazilGif img {
   width: 500px;
   height: 375px;
 }
 
 .russiaGif {
-  width: 60%;
-  height: 90%;
-  background-image: url("russiaDeforestation.gif");
+  width: 30%;
+  /*background-image: url("russiaDeforestation.gif");*/
 }
 
-.brazilGifContainer {
+.bgimg-2 {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+  /*flex-wrap: nowrap;
+  justify-content: center;*/
 }
 
 .caption {
@@ -74,12 +81,6 @@ h3 {
   text-transform: uppercase;
   font: 20px "Lato", sans-serif;
   color: #111;
-}
-
-
-.brazilGif{
-    margin-top: -10%;
-    margin-left: -50%;
 }
 
 p{

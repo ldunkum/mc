@@ -8,7 +8,7 @@
 	<script src="canvasjs.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-	<title>CanvasJS Example</title>
+	<title>Deforestation around the World</title>
 </head>
 
 <body>
@@ -22,27 +22,27 @@
 
 	<div class="bgimg-2">
 		<p style="opacity:100%;">Progress of deforestation from 2001-2014 in four countries</p>
-		<div class="caption russiaGifContainer">
+		<div class="caption russiaGifContainer gifContainer">
 			<div class="russiaGif">
-				<!-- <img src="russiaDeforestation.gif"  style="width: 60%; height: 90%;" > -->
+				<img class="gifs" src="russiaDeforestation.gif"/>
 				<p>Russia</p>
 			</div>
 		</div>
-		<div class="caption brazilGifContainer">
+		<div class="caption brazilGifContainer gifContainer">
 			<div class="brazilGif">
-				<img src="finalGif2.gif" style="width: 60%; height: 90%;" />
+				<img class="gifs" src="finalGif2.gif" />
 				<p>Brazil</p>
 			</div>
 		</div>
-		<div class="caption portugalGifContainer">
+		<div class="caption portugalGifContainer gifContainer">
 			<div class="portugalGif">
-				<img src="portRect.gif" style="width: 60%; height: 90%;">
+				<img class="gifs" src="portRect.gif"/>
 				<p>Portugal</p>
 			</div>
 		</div>
-		<div class="caption indonesiaGifContainer">
+		<div class="caption indonesiaGifContainer gifContainer">
 			<div class="indonesiaGif">
-				<img src="indonesiaRect.gif" style="width: 60%; height: 90%;">
+				<img class="gifs" src="indonesiaRect.gif"/>
 				<p>Indonesia</p>
 			</div>
 		</div>
@@ -200,7 +200,7 @@
 								chart.render();
 							}
 						}
-					});
+						});
 
 					chart.render();
 				}
