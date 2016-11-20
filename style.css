@@ -1,104 +1,134 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Roboto Mono";
-  color: #777;
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Roboto Mono";
+    color: #777;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
-  position: relative;
-  opacity: 0.65;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .bgimg-1 {
-  background-image: url("forestry.jpg");
-  min-height: 100%;
+    background-image: url("forestry.jpg");
+    min-height: 100%;
 }
 
 .bgimg-2 {
-  background-color:#a8d3e0;
-  min-height: 100%;
+    background-color: #a8d3e0;
+    min-height: 100%;
 }
 
-
 .bgimg-3 {
-  background-color:white;
-  min-height: 100%;
+    background-color: white;
+    min-height: 100%;
 }
 
 .bgimg-4 {
-  background-color:#374b51;
-  min-height: 100%;
+    background-color: #374b51;
+    min-height: 100%;
+    height: 100%;
 }
 
 .brazilGif img {
-  width: 500px;
-  height: 375px;
+    width: 500px;
+    height: 375px;
+}
+
+.russiaGif {
+    width: 60%;
+    height: 90%;
+    background-image: url("russiaDeforestation.gif");
 }
 
 .brazilGifContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
 .caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: #000;
 }
 
 .caption span.border {
-  color: #fff;
-  padding: 18px;
-  font-size: 5vw;
-  letter-spacing: 10px;
+    color: #fff;
+    padding: 18px;
+    font-size: 5vw;
+    letter-spacing: 10px;
 }
 
 h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
 }
 
-
-.brazilGif{
+.brazilGif {
     margin-top: -10%;
     margin-left: -50%;
 }
 
-p{
-  text-align: left;
+p {
+    text-align: left;
 }
-
-
 
 .container {
-    overflow:hidden;
-    max-width: 20%;
-    margin-top:-15%;
-    margin-left:5%;
+    overflow: hidden;
+    width: 25%;
+    height: 20%;
+    position: absolute;
+    top: 5%;
 }
 
+#first {
+    top: 0;
+    left: 0;
+}
+
+#second {
+    top: 0;
+    left: 25%;
+}
+
+#third {
+    top: 0;
+    left: 50%;
+}
+
+#fourth {
+    top: 0;
+    left: 75%;
+}
 
 .one {
     position: absolute;
-    margin-top: -5%;
     background-color: lightblue;
-    z-index: 1;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .two {
+    position: absolute;
+    top: 30px;
     display: none;
 }
-
+.two p{
+    color:black
+    height: 100%;
+}
