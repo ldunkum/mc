@@ -45,6 +45,19 @@ html {
     height: 100%;
 }
 
+.topGifContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.topGifContainer *{
+  border: 1px red solid;
+  flex-grow: 1;
+
+}
+
 .gifContainer *{
   display: block;
 }
@@ -69,12 +82,6 @@ html {
   margin-left: 40%;
 }
 
-.topGifContainer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
 
 .caption {
     position: absolute;
