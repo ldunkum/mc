@@ -24,8 +24,14 @@ html {
 }
 
 .bgimg-2 {
+    display: block;
+    justify-content: center;
     background-color: #a8d3e0;
     min-height: 100%;
+}
+
+.bgimg-2 * {
+  margin: 20px 0;
 }
 
 .bgimg-3 {
@@ -47,11 +53,27 @@ html {
   width: 30%;
 }
 
-.bgimg-2 {
+.russiaGifContainer {
+
+}
+
+.brazilGifContainer {
+
+}
+
+.portugalGifContainer {
+  margin-left:
+}
+
+.indonesiaGifContainer {
+  margin-left: 40%;
+}
+
+.topGifContainer {
   display: flex;
   flex-direction: row;
-  /*flex-wrap: nowrap;
-  justify-content: center;*/
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .caption {
