@@ -48,38 +48,39 @@ html {
 .topGifContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.topGifContainer *{
-  border: 1px red solid;
+.gifContainer {
+  /*border: 1px red solid;*/
   flex-grow: 1;
-
+  margin: 5%;
+  width: 35%;
 }
 
 .gifContainer *{
-  display: block;
+  /*border: 1px blue solid;*/
 }
 
 .gifs {
-  width: 30%;
+  width: 68%;
 }
 
 .russiaGifContainer {
-
+  order: 4;
 }
 
 .brazilGifContainer {
-
+  order: 1;
 }
 
 .portugalGifContainer {
-  margin-left:
+  order: 3;
 }
 
 .indonesiaGifContainer {
-  margin-left: 40%;
+  order: 2;
 }
 
 
@@ -123,7 +124,7 @@ p{
 #first {
     top: 0;
     left: 0;
-    
+
     background-color: #374b51;
 }
 
@@ -147,7 +148,7 @@ p{
     cursor: pointer;
     background-color: white;
     width: 60%;
-    
+
 }
 
 .two {
