@@ -6,14 +6,7 @@ html {
     color: #777;
 }
 
-.border{
-    margin
-    
-}
-
-
 .bgimg-1,
-/*.bgimg-2,*/
 .bgimg-3,
 .bgimg-4 {
     position: relative;
@@ -117,10 +110,11 @@ html {
 }
 
 .caption span.border {
-   
+    color:white;
     padding: 18px;
-    font-size: 5vw;
+    font-size: 8vw;
     letter-spacing: 10px;
+    margin-top: 10%;
 }
 
 h3 {
