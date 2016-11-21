@@ -103,7 +103,7 @@ html {
 }
 
 .captionnn{
-   
+
     margin-left: 85%;
     margin-top: 99%;
 }
@@ -290,5 +290,23 @@ p{
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
     z-index: -1;
+
+}
+
+.sourceGFW {
+  text-align: right;
+  margin-right: 2%;
+  color: #374b51;
+}
+
+
+.sourceGFW a{
+  text-align: right;
+  color: #777;
+  text-decoration: none;
+}
+
+.sourceGFW a:hover {
+  color: white;
 
 }
