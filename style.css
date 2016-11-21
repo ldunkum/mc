@@ -6,6 +6,12 @@ html {
     color: #777;
 }
 
+.border{
+    margin
+    
+}
+
+
 .bgimg-1,
 /*.bgimg-2,*/
 .bgimg-3,
@@ -141,11 +147,8 @@ p{
 #first {
     top: 0;
     left: 0;
-<<<<<<< HEAD
-=======
-
     background-color: #374b51;
->>>>>>> origin/master
+
 }
 
 #second {
