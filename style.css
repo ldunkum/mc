@@ -109,6 +109,18 @@ html {
     color: #000;
 }
 
+.captionnn{
+   
+    margin-left: 85%;
+    margin-top: 99%;
+}
+
+.captionn{
+    -webkit-transform: rotate(-90deg);
+    margin-left: -80%;
+    margin-top: -105%;
+}
+
 .caption span.border {
     color:white;
     padding: 18px;
