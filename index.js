@@ -4,6 +4,9 @@ $(document).ready(
             $(".two", $(this).parent()).toggle("slow", function () {
                 $(".two").css("background-color", "white");
             });
+            
         });
+       
     }
+    
 );

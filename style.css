@@ -123,8 +123,6 @@ p{
 #first {
     top: 0;
     left: 0;
-    
-    background-color: #374b51;
 }
 
 #second {
@@ -143,6 +141,7 @@ p{
 }
 
 .one {
+    transition: background-color 1s ease;
     position: absolute;
     cursor: pointer;
     background-color: white;
@@ -150,14 +149,114 @@ p{
     
 }
 
+.one:hover {
+    background-color: #374b51;
+    box-shadow:
+                1px 1px lightblue,
+                2px 2px lightblue,
+                3px 3px lightblue;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    
+    
+}
+
+
 .two {
     position: absolute;
     top: 30px;
     display: none;
     width:60%;
+    z-index: 1;
 }
 .two p{
     color:black;
     height: 100%;
     margin:5%;
+}
+
+.curiosities{
+    font-size: 5em;
+    margin-left:30%;
+    margin-top: 20%;
+    
+}
+
+
+@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.curiosities
+{
+    opacity: 1;
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+    z-index: -1;
+    
 }
