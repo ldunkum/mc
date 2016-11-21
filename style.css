@@ -63,12 +63,25 @@ html {
   /*border: 1px blue solid;*/
 }
 
+.gifContainer p {
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
 .gifs {
   width: 100%;
 }
 
 .russiaGifContainer {
   order: 4;
+}
+
+.russiaGif *{
+  margin-left: 21%;
+}
+
+.russiaGif img {
+  width: 60%;
 }
 
 .brazilGifContainer {
@@ -167,8 +180,8 @@ p{
                 3px 3px lightblue;
         -webkit-transform: translateX(-3px);
         transform: translateX(-3px);
-    
-    
+
+
 }
 
 
@@ -189,7 +202,7 @@ p{
     font-size: 5em;
     margin-left:30%;
     margin-top: 20%;
-    
+
 }
 
 
@@ -204,7 +217,7 @@ p{
     {
         -webkit-transform: translateX(-5px);
        transform: translateX(-5px);
-    } 
+    }
     50%
     {
         -webkit-transform: translateX(3px);
@@ -268,5 +281,5 @@ p{
         -webkit-animation-iteration-count: infinite;
         animation-iteration-count: infinite;
     z-index: -1;
-    
+
 }
