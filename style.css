@@ -113,15 +113,18 @@ p{
 .container {
     overflow: hidden;
     width: 25%;
-    height: 20%;
+    height: 80%;
     position: absolute;
     top: 5%;
-    margin-top: 2%;
+    margin-top: 20%;
+    margin:5%;
 }
 
 #first {
     top: 0;
     left: 0;
+    
+    background-color: #374b51;
 }
 
 #second {
@@ -141,17 +144,20 @@ p{
 
 .one {
     position: absolute;
-    background-color: lightblue;
     cursor: pointer;
+    background-color: white;
+    width: 60%;
+    
 }
 
 .two {
     position: absolute;
     top: 30px;
     display: none;
-    height: 100%;
+    width:60%;
 }
 .two p{
     color:black;
     height: 100%;
+    margin:5%;
 }
